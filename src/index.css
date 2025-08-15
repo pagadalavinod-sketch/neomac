@@ -1,42 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Neomac Systems Design System - All colors, gradients, fonts, etc defined here */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Neomac Brand Colors */
+    --neomac-blue: 240 100% 50%;        /* #0000FF */
+    --neomac-pink: 300 100% 50%;        /* #FF00FF */
+    
+    /* Background Colors */
+    --background: 0 0% 100%;             /* White */
+    --background-light: 220 14% 98%;     /* Light Gray */
+    --foreground: 213 17% 12%;           /* Dark Gray #1F2937 */
+    --foreground-muted: 215 13% 44%;     /* Medium Gray #6B7281 */
 
+    /* Component Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 213 17% 12%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --popover-foreground: 213 17% 12%;
+    
+    /* System Colors */
+    --primary: 240 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 98%;
+    --secondary-foreground: 213 17% 12%;
+    --muted: 220 14% 98%;
+    --muted-foreground: 215 13% 44%;
+    --accent: 300 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 240 100% 50%;
 
     --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(45deg, hsl(var(--neomac-blue)), hsl(var(--neomac-pink)));
+    --gradient-text: linear-gradient(135deg, hsl(var(--neomac-pink)), hsl(var(--neomac-blue)));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-card-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--neomac-blue) / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +116,58 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+@layer components {
+  /* Neomac Interactive Elements */
+  .neomac-button {
+    @apply bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-lg;
+    @apply transition-colors duration-300 ease-out;
+    @apply hover:bg-accent hover:text-accent-foreground;
+  }
+  
+  .neomac-nav-link {
+    @apply text-foreground-muted transition-colors duration-200;
+    @apply relative after:content-[''] after:absolute after:w-full after:scale-x-0;
+    @apply after:h-0.5 after:bottom-0 after:left-0 after:bg-accent;
+    @apply after:origin-center after:transition-transform after:duration-300;
+    @apply hover:text-accent hover:after:scale-x-100;
+  }
+  
+  .neomac-card {
+    @apply bg-card text-card-foreground p-6 rounded-xl;
+    box-shadow: var(--shadow-card);
+    @apply transition-all duration-300;
+    @apply hover:-translate-y-2;
+  }
+  
+  .neomac-card:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+  
+  .neomac-logo-filter {
+    @apply grayscale brightness-125 transition-all duration-300;
+    @apply hover:grayscale-0 hover:brightness-100 hover:scale-110;
+  }
+  
+  .gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .table-header-blue {
+    @apply bg-primary/10 text-primary font-bold;
+  }
+  
+  .table-header-pink {
+    @apply bg-accent/10 text-accent font-bold;
   }
 }
