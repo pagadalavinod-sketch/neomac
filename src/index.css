@@ -170,4 +170,12 @@
   .table-header-pink {
     @apply bg-accent/10 text-accent font-bold;
   }
+  
+  .machinery-card {
+    @apply bg-card rounded-lg shadow-md transition-all duration-300 overflow-hidden;
+  }
+  
+  .machinery-card:hover {
+    @apply transform -translate-y-2 shadow-lg;
+  }
 }

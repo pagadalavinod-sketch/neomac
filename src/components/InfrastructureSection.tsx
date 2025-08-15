@@ -80,6 +80,110 @@ const InfrastructureSection = () => {
           </table>
         </div>
 
+        {/* Machinery Gallery */}
+        <div className="mt-16">
+          <h3 className="text-3xl font-extrabold text-center mb-12">
+            <span className="gradient-text">Our Machinery</span>
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="machinery-card group">
+              <img 
+                src="/lovable-uploads/912a0d6a-9b01-49c3-8020-6668af82a715.png" 
+                alt="TSUGAMI CNC Turning Center"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <div className="p-4">
+                <h4 className="font-semibold text-foreground">CNC Turning Center</h4>
+                <p className="text-foreground-muted text-sm">TSUGAMI Model</p>
+              </div>
+            </div>
+            
+            <div className="machinery-card group">
+              <img 
+                src="/lovable-uploads/cfee96e7-0071-4299-a3eb-22d8599e231e.png" 
+                alt="COSMOS CVM 1050 Vertical Machining Center"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <div className="p-4">
+                <h4 className="font-semibold text-foreground">Vertical Machining Center</h4>
+                <p className="text-foreground-muted text-sm">COSMOS CVM 1050</p>
+              </div>
+            </div>
+            
+            <div className="machinery-card group">
+              <img 
+                src="/lovable-uploads/5f8c3951-14e0-43c8-bb51-bf313f059bbd.png" 
+                alt="COSMOS CVM 800 Vertical Machining Center"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <div className="p-4">
+                <h4 className="font-semibold text-foreground">Vertical Machining Center</h4>
+                <p className="text-foreground-muted text-sm">COSMOS CVM 800</p>
+              </div>
+            </div>
+            
+            <div className="machinery-card group">
+              <img 
+                src="/lovable-uploads/094a70ad-7aec-4085-974b-7e83a1039ca8.png" 
+                alt="COSMOS CVM 1370 Vertical Machining Center"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <div className="p-4">
+                <h4 className="font-semibold text-foreground">Vertical Machining Center</h4>
+                <p className="text-foreground-muted text-sm">COSMOS CVM 1370</p>
+              </div>
+            </div>
+            
+            <div className="machinery-card group">
+              <img 
+                src="/lovable-uploads/350f3476-8496-4271-af04-707312ac05e8.png" 
+                alt="Sparktec EDM Machine"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <div className="p-4">
+                <h4 className="font-semibold text-foreground">EDM Machine</h4>
+                <p className="text-foreground-muted text-sm">Sparktec</p>
+              </div>
+            </div>
+            
+            <div className="machinery-card group">
+              <img 
+                src="/lovable-uploads/cbc402c4-0dd5-4af3-8fdb-d6a97a8e3207.png" 
+                alt="Electronica Wire EDM"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <div className="p-4">
+                <h4 className="font-semibold text-foreground">Wire EDM</h4>
+                <p className="text-foreground-muted text-sm">Electronica SPRINTCUT MINI</p>
+              </div>
+            </div>
+            
+            <div className="machinery-card group">
+              <img 
+                src="/lovable-uploads/61abc8fa-7cf2-4035-8550-a3766264dbc4.png" 
+                alt="CMM Coordinate Measuring Machine"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <div className="p-4">
+                <h4 className="font-semibold text-foreground">CMM Machine</h4>
+                <p className="text-foreground-muted text-sm">Coordinate Measuring Machine</p>
+              </div>
+            </div>
+            
+            <div className="machinery-card group">
+              <img 
+                src="/lovable-uploads/06cb8aa6-07ca-4b62-ad1f-0f2d0e20fd1b.png" 
+                alt="BFW BMV 50 TC24 Machining Center"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <div className="p-4">
+                <h4 className="font-semibold text-foreground">CNC Machining Center</h4>
+                <p className="text-foreground-muted text-sm">BFW BMV 50 TC24</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="mt-12 grid md:grid-cols-3 gap-8">
           <div className="text-center">
             <div className="text-3xl font-extrabold text-primary mb-2">20,000+</div>
