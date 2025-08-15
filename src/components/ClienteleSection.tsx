@@ -1,10 +1,13 @@
 const clients = [
-  { name: "Boeing", logo: "https://logos-world.net/wp-content/uploads/2020/03/Boeing-Logo.png" },
-  { name: "Lockheed Martin", logo: "https://logos-world.net/wp-content/uploads/2020/11/Lockheed-Martin-Logo.png" },
-  { name: "Airbus", logo: "https://logos-world.net/wp-content/uploads/2020/03/Airbus-Logo.png" },
-  { name: "Raytheon", logo: "https://logos-world.net/wp-content/uploads/2020/11/Raytheon-Logo.png" },
-  { name: "BAE Systems", logo: "https://logos-world.net/wp-content/uploads/2020/11/BAE-Systems-Logo.png" },
-  { name: "General Dynamics", logo: "https://logos-world.net/wp-content/uploads/2020/11/General-Dynamics-Logo.png" }
+  { name: "DRDO", logo: "/lovable-uploads/6a4e5c9d-7e11-4cc4-b2d1-d3fb626dde10.png" },
+  { name: "DRDO RCI", logo: "/lovable-uploads/9a7c2782-8823-426d-86d5-139412b24077.png" },
+  { name: "HAL", logo: "/lovable-uploads/62f9989d-2f21-4c5b-a96b-6419f9d00dc1.png" },
+  { name: "Bharat Dynamics Limited", logo: "/lovable-uploads/4c5208d2-8a08-48f6-bc76-d8f44553efb8.png" },
+  { name: "Bharat Electronics", logo: "/lovable-uploads/77ae744c-fb2b-499c-b6d6-27faaa3309f8.png" },
+  { name: "Bharat Forge Kalyani", logo: "/lovable-uploads/4424012f-cb11-46b4-a006-c1416b570c46.png" },
+  { name: "Astra Microwave Products", logo: "/lovable-uploads/e20b7f84-6541-45ee-adf3-0662d2930443.png" },
+  { name: "Ananth Technologies", logo: "/lovable-uploads/d3cfa228-032f-4d85-988a-3d8576e267f9.png" },
+  { name: "Avantel", logo: "/lovable-uploads/bc33ed6c-3d16-4c5e-9d1a-25ddaa397c5b.png" }
 ];
 
 const ClienteleSection = () => {
