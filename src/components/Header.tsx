@@ -17,9 +17,12 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-extrabold">
-            <span className="text-accent">neomac</span>
-            <span className="text-primary"> systems</span>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/35223871-7854-4b50-970b-0b4e20a638e6.png" 
+              alt="Neomac Systems Logo"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
